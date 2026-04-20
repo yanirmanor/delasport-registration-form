@@ -12,6 +12,8 @@ type CountryAutocompleteProps = {
 const inputClassName =
   "w-full rounded-2xl border border-slate-200/80 bg-slate-100 px-6 py-4 pr-12 text-base text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200";
 
+const closeMenuDelayMs = 120;
+
 export function CountryAutocomplete({
   value,
   error,
@@ -37,7 +39,7 @@ export function CountryAutocomplete({
           }}
           onFocus={() => onOpenChange(true)}
           onBlur={() => {
-            setTimeout(() => onOpenChange(false), 120);
+            setTimeout(() => onOpenChange(false), closeMenuDelayMs);
           }}
           placeholder="Type to search countries"
           className={inputClassName}
