@@ -21,7 +21,7 @@ export function CountryAutocomplete({
   onOpenChange,
 }: CountryAutocompleteProps) {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 pb-5">
       <label htmlFor="country" className="block text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
         Country
       </label>

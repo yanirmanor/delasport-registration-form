@@ -12,7 +12,7 @@ const textInputClassName =
 
 export function InputField({ id, label, error, hint, className = "", ...props }: InputFieldProps) {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 pb-5">
       <label htmlFor={id} className="block text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
         {label}
       </label>
